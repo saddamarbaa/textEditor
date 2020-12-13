@@ -1,9 +1,4 @@
 /**
- * TODO: Toggle the align style for "Formatted Text" when the appropriate button is clicked
- */
-
-
-/**
  *  Function to update the output text as a user types in the textarea
  */
 
@@ -47,9 +42,10 @@ function makeUnderline(element) {
     }
 }
 
-/**
- * Toggle the style textAlign attribute
- * Toggle the active state for the align butttons
+/** 
+ *  Toggle the align style for "Formatted Text" when the appropriate button is clicked
+ *  Toggle the style textAlign attribute
+ *  Toggle the active state for the align butttons
  * HINT: Use the style property of the element
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
