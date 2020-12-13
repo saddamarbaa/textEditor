@@ -7,7 +7,7 @@
 
 
 /**
- *  function to update the output text as a user types in the textarea
+ *  Function to update the output text as a user types in the textarea
  */
 
 function updateText() {
@@ -15,15 +15,14 @@ function updateText() {
     document.getElementById('text-output').innerText = inputText;
 }
 
-/**
+/** 
+ * Function to add a .bold class to "Formatted Text" when the bold button is clicked
  * Toggle the bold class for the output text
- * HINT: Use the onclick function insite HTML
- * HINT: Look into using this keyword
- * HINT: Use the classList property
- * HINT: Toggle .active class for the button
  */
+
 function makeBold(element) {
-    console.log(element.innerText);
+    element.classList.toggle('active');
+    document.getElementById('text-output').classList.toggle('bold');
 }
 
 /**
