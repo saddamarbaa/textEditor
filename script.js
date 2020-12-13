@@ -49,6 +49,8 @@ function makeUnderline(element) {
  * HINT: Use the style property of the element
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
-function alignText(elem, alignType) {
-    // CODE GOES HERE
+function alignText(element, alignType) {
+    element.classList.toggle('active');
+    const formattedText = document.getElementById('text-output');
+    formattedText.style.textAlign = alignType;
 }
