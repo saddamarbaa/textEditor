@@ -16,8 +16,8 @@ function updateText() {
 }
 
 /** 
- * Function to add a .bold class to "Formatted Text" when the bold button is clicked
- * Toggle the bold class for the output text
+ * Function to add a bold class to "Formatted Text" when the bold button is clicked
+ * (Toggle the bold class for the output text)
  */
 
 function makeBold(element) {
@@ -26,9 +26,15 @@ function makeBold(element) {
 }
 
 /**
- * Toggle the italic class for the output text
+ * Function to add a italic class to "Formatted Text" when the italic button is clicked
+ * (Toggle the italic class for the output text)
  */
-function makeItalic(elem) {}
+
+function makeItalic(element) {
+    element.classList.toggle('active');
+    document.getElementById('text-output').classList.toggle('italic');
+    console.log(element)
+}
 
 /**
  * Toggle the underline class for the output text
