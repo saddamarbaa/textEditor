@@ -8,13 +8,11 @@
 
 /**
  *  function to update the output text as a user types in the textarea
- * 
  */
 
 function updateText() {
-    const text = document.getElementById("text-input").value;
-    document.getElementById('text-output').innerText = text;
-    console.log(text);
+    const inputText = document.getElementById('text-input').value;
+    document.getElementById('text-output').innerText = inputText;
 }
 
 /**

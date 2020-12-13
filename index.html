@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
-    <title>repl.it</title>
+    <title>Text Editor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="text-center container">
@@ -26,7 +26,8 @@
           <div class="col">
             <div class="form-group">
               <label for="text-input">Your Document Text</label>
-              <textarea class="form-control" id="text-input" onkeydown="updateText()" rows="3"></textarea>
+              <!-- onkeyup call updateText() function -->
+              <textarea class="form-control" id="text-input" onkeyup="updateText()" rows="3"></textarea>
           </div>
           </div>
           <div class="col">
