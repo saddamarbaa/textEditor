@@ -22,8 +22,8 @@ function updateText() {
  * HINT: Use the classList property
  * HINT: Toggle .active class for the button
  */
-function makeBold(elem) {
-    //CODE GOES HERE
+function makeBold(element) {
+    console.log(element.innerText);
 }
 
 /**
