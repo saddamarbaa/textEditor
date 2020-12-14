@@ -5,6 +5,7 @@
 function updateText() {
     const inputText = document.getElementById('text-input').value;
     document.getElementById('text-output').innerText = inputText;
+    console.log(inputText)
 }
 
 /** 
