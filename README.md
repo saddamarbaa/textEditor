@@ -1,2 +1,2 @@
 # project-text-editor
-Project: Create a Google DOC like Text Editor
+Project: Create a Google DOC like TextEditor With Vanilla Javascript
