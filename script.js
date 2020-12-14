@@ -1,7 +1,3 @@
-/**
- *  Function to update the output text as a user types in the textarea
- */
-
 function updateText() {
     const inputText = document.getElementById('text-input').value;
     document.getElementById('text-output').innerText = inputText;
@@ -43,12 +39,13 @@ function makeUnderline(element) {
 }
 
 /** 
- *  Toggle the align style for "Formatted Text" when the appropriate button is clicked
+ *  Function to add the align style for "Formatted Text" when the appropriate align button is clicked
  *  Toggle the style textAlign attribute
  *  Toggle the active state for the align butttons
  * HINT: Use the style property of the element
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
+
 function alignText(element, alignType) {
     element.classList.toggle('active');
     const formattedText = document.getElementById('text-output');
