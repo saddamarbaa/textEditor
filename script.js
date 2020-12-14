@@ -1,3 +1,7 @@
+/**
+ * Function to update the output text as you type in the textarea
+ */
+
 function updateText() {
     const inputText = document.getElementById('text-input').value;
     document.getElementById('text-output').innerText = inputText;
@@ -40,14 +44,20 @@ function makeUnderline(element) {
 
 /** 
  *  Function to add the align style for "Formatted Text" when the appropriate align button is clicked
- *  Toggle the style textAlign attribute
- *  Toggle the active state for the align butttons
- * HINT: Use the style property of the element
- * HINT: Make sure to untoggle the active state for all other align buttons
+ *  (Toggle the style textAlign attribute)
+ *  (Toggle the active state for the align butttons)
  */
 
 function alignText(element, alignType) {
+    document.getElementById('text-output').style.textAlign = alignType;
+    // select all the element ByClassName align
+    const butttonsList = document.getElementsByClassName('align');
+    // Iterate over the butttonsList and remove the active class
+    for (let i = 0, length = butttonsList.length; i < length; i++) {
+        if (butttonsList[i].classList.contains('active')) {
+            butttonsList[i].classList.remove('active');
+        }
+    }
+    // add the active class only for the current element
     element.classList.toggle('active');
-    const formattedText = document.getElementById('text-output');
-    formattedText.style.textAlign = alignType;
 }

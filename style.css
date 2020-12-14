@@ -6,23 +6,15 @@
     text-align: left;
 }
 
-#text-input {
-    min-height: 200px;
-}
+#text-input {min-height: 200px;}
 
 .editor .col {
     max-width: 50%;
     flex-basis: 50%;
 }
 
-.bold {
-    font-weight: bold;
-}
+.bold {font-weight: bold;}
 
-.italic {
-    font-style: italic;
-}
+.italic {font-style: italic;}
 
-.underline {
-    text-decoration: underline;
-}
+.underline {text-decoration: underline;}
