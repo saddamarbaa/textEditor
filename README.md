@@ -1,5 +1,6 @@
 # textEditor
-Project: Simple TextEditor With Vanilla Javascript
+This is a code repository for project: Simple TextEditor with vanilla JavaScript 
+in this project I learned more about The HTML DOM (Document Object Model) and The Browser Object Model (BOM).
 
 
 GitHub Pages(URL FOR TESTING) :https://saddamarbaa.github.io/textEditor/
