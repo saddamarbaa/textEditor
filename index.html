@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-ID">
 <head>
-    <!-- Start Required meta tag -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="Text, Editor">
-    <meta name="author" content="Saddam Arbaa">
-    <!--  Start title -->
-    <title>Text Editor</title>
-    <!-- Bootstrap Framework -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
-    <!-- the Main CSS File -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Start Required meta tag -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Text, Editor">
+  <meta name="author" content="Saddam Arbaa">
+  <!--  Start title -->
+  <title>Text Editor</title>
+  <!-- Bootstrap Framework -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+  <!-- the Main CSS File -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="text-center container">
-    <main>
-        <!-- the main header -->
-        <h1 class="banner p-3 text-primary">TextEditor</h1>
-        <div class="row">
-            <div class="col">
-                <!-- onclick call makeBold() function -->
-                <button id="bold" type="button" class="btn btn-light" onclick="makeBold(this)">Bolb</button>
-                <!-- onclick call makeItalic() function -->
-                <button id="italic" type="button" class="btn btn-light" onclick="makeItalic(this)">Italic</button>
-                <!-- onclick call makeUnderline() function -->
-                <button id="underline" type="button" class="btn btn-light" onclick="makeUnderline(this)">Underline</button>
-                <!-- onclick call alignText() function -->
-                <button id="left-align" type="button" class="align btn btn-light" onclick="alignText(this,'left')"><i class="fas fa-align-left"></i></button>
-                <!-- onclick call alignText() function -->
-                <button id="center-align" type="button" class="align btn btn-light" onclick="alignText(this,'center')"><i class="fas fa-align-center"></i></button>
-                <!-- onclick call alignText() function -->
-                <button id="right-align" type="button" class="align btn btn-light" onclick="alignText(this,'right')"><i class="fas fa-align-right"></i></button>
-            </div>
+  <main>
+    <!-- the main header -->
+    <h1 class="banner p-3 text-primary">TextEditor</h1>
+    <div class="row">
+      <div class="col">
+        <!-- onclick call makeBold() function -->
+        <button id="bold" type="button" class="btn btn-light" onclick="makeBold(this)">Bolb</button>
+        <!-- onclick call makeItalic() function -->
+        <button id="italic" type="button" class="btn btn-light" onclick="makeItalic(this)">Italic</button>
+        <!-- onclick call makeUnderline() function -->
+        <button id="underline" type="button" class="btn btn-light" onclick="makeUnderline(this)">Underline</button>
+        <!-- onclick call alignText() function -->
+        <button id="left-align" type="button" class="align btn btn-light" onclick="alignText(this,'left')"><i
+            class="fas fa-align-left"></i></button>
+        <!-- onclick call alignText() function -->
+        <button id="center-align" type="button" class="align btn btn-light" onclick="alignText(this,'center')"><i
+            class="fas fa-align-center"></i></button>
+        <!-- onclick call alignText() function -->
+        <button id="right-align" type="button" class="align btn btn-light" onclick="alignText(this,'right')"><i
+            class="fas fa-align-right"></i></button>
+      </div>
+    </div>
+    <hr />
+    <div class="row editor">
+      <div class="col">
+        <div class="form-group">
+          <label for="text-input">Your Document Text</label>
+          <!-- oninput call updateText() function -->
+          <textarea class="form-control" id="text-input" oninput="updateText()" rows="3"></textarea>
         </div>
-        <hr/>
-        <div class="row editor">
-            <div class="col">
-                <div class="form-group">
-                    <label for="text-input">Your Document Text</label>
-                    <!-- oninput call updateText() function -->
-                    <textarea class="form-control" id="text-input" oninput="updateText()" rows="3"></textarea>
-                </div>
-            </div>
-            <div class="col">
-                <label for="text-input">Formatted Text</label>
-                <div id="text-output" class="bg-light">
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <label for="text-input">Formatted Text</label>
+        <div id="text-output" class="bg-light">
         </div>
-    </main>
-    <!-- the Main Script File(Javascript) -->
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </main>
+  <!-- the Main Script File(Javascript) -->
+  <script src="script.js"></script>
 </body>
 </html>
