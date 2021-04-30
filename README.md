@@ -2,7 +2,12 @@
 This is a code repository for project: Simple TextEditor with vanilla JavaScript 
 in this project I learned more about the HTML DOM (Document Object Model) and The Browser Object Model (BOM)
 
-#### <a href="https://saddamarbaa.github.io/textEditor/">LIVE DEMO</a>
+### <a href="https://texteditor-app.netlify.app/">LIVE DEMO</a>
+
+
+### <a href="https://saddamarbaa.github.io/textEditor/">GitHub Pages DEMO</a>
+
+
 
 #### <a href="https://www.loom.com/share/35bd55eaca9a4960b72cdaca60179a58">LIVE VIDEO DEMO</a>
 
